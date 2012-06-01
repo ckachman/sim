@@ -1,30 +1,22 @@
 <%@ page contentType="application/json"%>
 {
-	"status":		"success",
-	"page":			"BCK002",
+	"status":				"success",
+	"page":					"BCK001",		
+	
 	"config": {
 		"beepCount":		2,
-		"appLabel":			"Backstock",
-		"leftURL":			"ajax/ajax_Home.chtm",
 		"homeURL":			"ajax/ajax_Home.chtm",
 		"toggleURL":		"ajax/ajax_Home.chtm",
 		"showKeyboard":		true,
+		"fieldLabel":		"<b>Scan</b>/<b>Key</b> item barcode",
+		"fieldID":			"txtItemScan",
+		"formID":			"formBCK001",
+		"formAction":		"ajax/ajax_BCK001.chtm",
+		"appLabel":			"Backstock",
 		"line_1":			"",
-		"line_2":			"${item.sku}",
-		"line_3":			"${item.description}",
-		"fill_group":		"Fill group: Mens",
-		"fieldLabel":		"<b>Scan</b>/<b>Key</b> location",
-		"fieldID":			"txtLocationScan",
-		"formAction":		"ajax/ajax_BCK002.chtm",
-		"formID":			"formBCK002"
-	},
-		
-	"gridTable": {
-		"tableTitle":		"",
-		"data":	[
-		<g:each in="${itemLocations}" var="itemLocation" status="i">
-			{"Location":"${itemLocation.location.locId}","Group":"${itemLocation.location.state}","Qty":"${itemLocation.quantity}"}<g:if test="${(i + 1) < itemLocations.size()}">,</g:if>
-		</g:each>
-		]		
-	}	
+		"line_2":			"",
+		"line_3":			"",
+		"line_3_right":		""
+	}
+	
 }

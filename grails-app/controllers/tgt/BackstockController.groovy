@@ -23,7 +23,9 @@ class BackstockController {
 	// edit item location
 	def editItemLocation = {
 		println "params: $params"
-		[]
+		def itemloc = new ItemLocation(location: new Location(locId: params.txtLocationScan), quantity:3, 
+				item: new Item(sku:'123123', description:'awesome item', state: 'itemstate'))
+		[itemloc: itemloc]
 	}
 	
 	def updateItemLocation = {

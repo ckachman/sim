@@ -15,7 +15,7 @@
 		"fill_group":		"Fill group: Mens",
 		"fieldLabel":		"<b>Scan</b>/<b>Key</b> location",
 		"fieldID":			"txtLocationScan",
-		"formAction":		"ajax/ajax_BCK002.chtm",
+		"formAction":		"../backstock/editItemLocation",
 		"formID":			"formBCK002"
 	},
 		
