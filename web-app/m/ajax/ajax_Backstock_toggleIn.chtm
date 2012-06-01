@@ -1,0 +1,78 @@
+{
+	"status":				"success",
+	"page":					"BCK001",
+	"strings": {
+		"appName":			"Backstock",
+		"page":				"Page",
+		"of":				"of",
+		"close":			"Close",
+		"enter":			"Enter"
+	},
+
+	
+	"curPage": [
+		"BCK001",
+		"BCK002"
+	],
+	
+	"pageDataLoad": [
+		{ 
+			"config": {
+				"beepCount":		2,
+				"leftURL":			"ajax/ajax_Home.chtm",
+				"homeURL":			"ajax/ajax_Home.chtm",
+				"toggleURL":		"ajax/ajax_Home.chtm",
+				"toggleURL":		"ajax/ajax_Home.chtm",
+				"showKeyboard":		true,
+				"fieldLabel":		"<b>Scan</b>/<b>Key</b> item barcode",
+				"fieldID":			"txtItemScan",
+				"formID":			"formBCK001",
+				"formAction":		"ajax/ajax_BCK001.chtm",
+				"appLabel":			"Backstock",
+				"line_1":			"",
+				"line_2":			"",
+				"line_3":			"",
+				"line_3_right":		""
+			}
+		},
+		{
+			"config": {
+				"beepCount":		2,
+				"appLabel":			"Backstock",
+				"leftURL":			"ajax/ajax_Home.chtm",
+				"homeURL":			"ajax/ajax_Home.chtm",
+				"toggleURL":		"ajax/ajax_Home.chtm",
+				"showKeyboard":		true,
+				"line_1":			"",
+				"line_2":			"490581002089",
+				"line_3":			"Men's Denim Shorts",
+				"fill_group":		"Fill group: Mens",
+				"fieldLabel":		"<b>Scan</b>/<b>Key</b> location",
+				"fieldID":			"txtLocationScan",
+				"formID":			"formBCK002"
+			},
+			
+			"gridTable":	{
+				"header": [ "Location", "Group", "Qty"],
+				"data": [
+					[ "1x3A232A2", "Open Stock", "NQ" ],
+					[ "2xD145S01", "Open Stock", "NQ" ],
+					[ "3xA232A32", "Open Stock", "NQ" ],
+					[ "4xD145S01", "Open Stock", "NQ" ],
+					[ "5xA232A32", "Open Stock", "NQ" ],
+					[ "6xD145S01", "Open Stock", "NQ" ],
+					[ "7xA232A32", "Open Stock", "NQ" ],
+					[ "8xD145S01", "Open Stock", "NQ" ],
+					[ "9xA232A32", "Open Stock", "NQ" ],
+					[ "10xD145S01", "Open Stock", "NQ" ],
+					[ "11xA232A32", "Open Stock", "NQ" ],
+					[ "12xD145S01", "Open Stock", "NQ" ],
+					[ "13xD147S79", "Open Stock", "NQ" ]
+				]
+			}
+		}
+	]	
+	
+	
+	
+}

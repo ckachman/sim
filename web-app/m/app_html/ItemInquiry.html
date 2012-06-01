@@ -1,0 +1,62 @@
+									
+<div id="ItemInquiry" class="appfrag">
+	
+	<div id="INQ001" class="pagefrag">
+		<form id="form_INQ001" onsubmit="return m.curFormSubmit(this);">
+			<div class="contentHeader"></div>
+			<!-- place all hidden form elements at the bottom or we'll get a weird space on top! -->
+			<input type="hidden" value="K" name="txtInputType" id="txtInputType"  />
+		</form>
+	</div><!-- end #INQ002 -->
+
+	<div id="INQ002" class="pagefrag">
+		<form ajax="true" id="form_INQ002" method="GET" onsubmit="return m.curFormSubmit(this);">
+			<div class="contentHeader"></div>
+			<input type="button" class="buttonWide" value="x" name="salesFloorLocs" id="salesFloorLocs" />
+			<div id="salesFloorLocsData"><div class="value"></div><div class="label"></div></div>
+			<input type="button" class="buttonWide" value="x" name="backroomLocs" id="backroomLocs" />
+			<div id="backroomLocsData"><div class="value"></div><div class="label"></div></div>
+			<input type="button" class="buttonRight" value="x" name="reverseLogistics" id="reverseLogistics" />
+			<!-- place all hidden form elements at the bottom or we'll get a weird space on top! -->
+			<input type="hidden" value="K" name="txtInputType" id="txtInputType"  />
+		</form>
+	</div><!-- end #INQ002 -->
+
+	<div id="INQ003" class="pagefrag">
+		<form id="form_INQ003" onsubmit="return m.curFormSubmit(this);">
+			<div class="locationGrid"></div>
+			<!-- place all hidden form elements at the bottom or we'll get a weird space on top! -->
+			<input type="hidden" value="K" name="txtInputType" id="txtInputType"  />
+		</form>
+	</div><!-- end #INQ003 -->
+
+	<div id="INQ004" class="pagefrag">
+		<form id="form_INQ004" onsubmit="return m.curFormSubmit(this);">
+			<div class="locationGrid"></div>
+			<!-- place all hidden form elements at the bottom or we'll get a weird space on top! -->
+			<input type="hidden" value="K" name="txtInputType" id="txtInputType"  />
+		</form>
+	</div><!-- end #INQ004 -->
+	
+	<div id="INQ005" class="pagefrag">
+		<form id="form_INQ005" onsubmit="return m.curFormSubmit(this);">
+			<div class="content">
+				<div class="tableHeader"></div>
+				<div class="tableContent"></div>
+			</div>
+			<input type="hidden" value="K" name="txtInputType" id="txtInputType"  />
+		</form>
+	</div><!-- end #INQ005 -->
+	
+	<div id="INQ006" class="pagefrag">
+		<div class="loc"></div>
+		<form ajax="true" method="GET" id="form_INQ006" onsubmit="return m.curApp.INQ006_submit(this);">
+			<input type="hidden" id="location" name="location" value="" />
+			<div class="qty"></div>
+			<input type="submit" class="btnExit"  name="Exit" value="x"  />
+			<input type="submit" class="btnNext"  name="Next" value="x"  />
+		</form>  
+	</div><!-- end #INQ006 -->
+
+</div><!-- end .appfrag#INQ -->
+

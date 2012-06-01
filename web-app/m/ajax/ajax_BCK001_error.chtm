@@ -1,0 +1,12 @@
+{
+
+	"status":			"error",
+	"header":			"Redirect on Error",
+	"body":				"This error message will redirect via ajax to the next JSON page.",
+	"beepCount":		4,
+	"redirect":			"ajax/ajax_Pull_toggleIn.chtm",
+	"redirectViaAjax":	true,
+	"redirectOnOK":		true,
+	"redirectAjaxData":	{ "status": "success", "page": "BCK002" }
+	
+}

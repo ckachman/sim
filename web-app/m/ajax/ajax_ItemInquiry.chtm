@@ -1,0 +1,30 @@
+{
+	"status":				"success",
+	"page":					"INQ001",		
+	
+	"config": {
+		"beepCount":		2,
+		"homeURL":			"ajax/ajax_Home.chtm",
+		"toggleURL":		"ajax/ajax_Home.chtm",
+		"showKeyboard":		true,
+		"fieldLabel":		"<b>Scan</b>/<b>Key</b> item barcode",
+		"fieldID":			"txtItemScan",
+		"formID":			"formINQ001",
+		"formAction":		"ajax/ajax_INQ002.chtm",
+		"appLabel":			"ItemInquiry",
+		"line_1":			"",
+		"line_2":			"",
+		"line_3":			"",
+		"line_3_right":		""
+	},
+		
+	
+	"strings": {
+		"appName":			"Item Inquiry",
+		"page":				"Page",
+		"of":				"of",
+		"close":			"Close",
+		"enter":			"Enter"
+	}
+	
+}

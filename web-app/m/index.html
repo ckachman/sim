@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html><head>
+	<title>M</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<META HTTP-Equiv="zoom" Content="page:2.0">
+	<meta http-equiv="ScannerNavigate" content="Javascript:u.onscan('%s','%s','%s','%s','%s');" />
+	
+	<link href="./css/m.css" rel="stylesheet" type="text/css" />
+	
+	<script src="./scripts/jquery-1.7.2.min.jsx" type="text/javascript"></script>
+	<script src="./scripts/main.jsx" type="text/javascript" ></script>
+	<script src="./scripts/utility_functions.jsx" type="text/javascript" ></script>
+	<script src="./scripts/Home.jsx" type="text/javascript" ></script>
+	<script src="./scripts/Backstock.jsx" type="text/javascript" ></script>
+	<script src="./scripts/Pull.jsx" type="text/javascript" ></script>
+	<script src="./scripts/itemInquiry.jsx" type="text/javascript" ></script>
+	
+</head>
+<body onload="u.getMSecsTimer(pageload, 'body onload (total page load time)')">
+	<div id="MobileScreen" class="mobileScreen">
+	
+		<input type="hidden" value="" name="txtScannedData" id="txtScannedData" runat="server" />
+		<input type="hidden" value="" name="txtBarcodeType" id="txtBarcodeType" runat="server" />
+		
+		<div id="GlobalNavBar" class="absGlobalNav">
+			<a href="#" class="btn btn_keyboard"></a>
+			<a class="btn btn_home" href="/Backstock/DisplayScanItem"></a>
+			<a href="#" class="btn btn_toggle"></a>
+		</div>
+		
+		<div id="Content" class="absContentArea2">
+			
+			<div id="content_head">
+				<div id="appLabel" class="appLabel"></div>
+				<div class="th3" id="header_line_1"></div>
+				<div class="th3" id="header_line_2"></div>
+				<div class="th3" id="header_line_3"></div>
+				<div class="th3" id="header_line_1_right"></div>
+				<div class="th3" id="header_line_2_right"></div>
+			</div>
+			
+			
+			<div id="maindiv">
+				<div class="mainPageHeader">
+					
+					
+<!-- 
+###########################################################################
+Everything above this line is the header for the entire app.
+########################################################################### 
+-->
+					
+					
+					<div id="Home" class="appfrag">
+						
+						<div id="M001" class="pagefrag">
+							<form id="frmMenu" method="get" action="/Home/ProcessMenu">
+								<!--<a class="app_btn btn_backstock"></a>
+								<a class="app_btn btn_pricechange"></a>
+								<a class="app_btn btn_pull"></a>
+								<a class="app_btn btn_backroomupdate"></a>
+								<a class="app_btn btn_iteminquiry"></a>
+								<a class="app_btn btn_exit"></a>-->
+								<input type="hidden" value="backstock" id="txtSource" name="txtSource" />
+								<input type="hidden" value="unknown" id="txtDeviceID" name="txtDeviceID" />
+								
+							</form>
+						</div><!-- end #M001 -->
+					
+					</div><!-- end .appfrag#Home -->
+					
+					
+					
+					<div id="Backstock" class="appfrag">
+						
+						<div id="BCK001" class="pagefrag">
+							<!-- form id must be '#form_' + pagefrag.id to submit correctly -->
+							<form id="form_BCK001" onsubmit="return m.submitCurrentForm();">
+								<div class="contentHeader"></div>
+								<!-- place all hidden form elements at the bottom or we'll get a weird space on top! -->
+								<input type="hidden" value="K" name="txtInputType" id="txtInputType"  />
+							</form>
+						</div><!-- end #BCK001 -->
+					
+						<div id="BCK002" class="pagefrag">
+							<form id="form_BCK002" onsubmit="return m.curFormSubmit(this);">
+								<div class="contentHeader"></div>
+								<!-- place all hidden form elements at the bottom or we'll get a weird space on top! -->
+								<input type="hidden" value="K" name="txtInputType" id="txtInputType"  />
+							</form>
+							<div class="fill_group"></div>
+							<div class="locationGrid"></div>
+						</div><!-- end #BCK002 -->
+						
+						<div id="BCK004" class="pagefrag">
+							<div class="loc"></div>
+							<form ajax="true" id="form_BCK004" onsubmit="return m.curFormSubmit(this);">
+								<input type="hidden" id="location" name="location" value="" />
+								<div class="qty"></div>
+								<input type="submit"  class="btnEnterQty"  name="Enter" value="x"  />
+							</form>  
+						</div><!-- end #BCK004 -->
+					
+					</div><!-- end .appfrag#Backstock -->
+							
+							
+							
+										
+		
+					
+					<!-- the code fragments are components that can be reused in many pages -->
+					<div id="codeFragments" style="display: none;">
+						
+						<div id="tableDataGridView">
+							<div class="tableTitle"></div>
+							<table class="GridView">
+								<thead><tr></tr></thead>
+								<tbody></tbody>
+							</table>
+						</div>
+						
+						<div id="qtyComponent">
+							<label class="qty_label" for="txtQty"></label>
+							<a id='btnIncrease' class="btn btn_increase"></a>
+							<a id="btnDecrease" class="btn btn_decrease"></a>
+							<input class="EnterQtyTextBox" id="txtQty" maxlength="3" name="txtQty" type="text" value="" />
+						</div>
+						
+						<div id="textBoxComponent">
+							<label class="loc"></label>
+							<input class="TextBox" id="txtItem" maxlength="18" name="txtItem" type="text" value="" />
+						</div>
+						
+					</div>
+	
+					
+					
+<!-- 
+###########################################################################
+Everything below this line is the footer for the entire app.
+########################################################################### 
+-->
+					
+					
+				</div>
+			</div><!-- end #maindiv -->
+			
+		</div><!-- end #Content.absContentArea2 -->
+		
+		<!-- this is the bottom bar, containing the arrow navigation and the screen id label text -->
+		<div id="AppNavBar" class="appNav">
+			<div id="navBtns"></div>
+			<div id="timeData"></div>
+			<div id="time"></div>
+			<div class="ScreenID"> <label for="labelScreenID"></label></div>
+		</div>
+		
+	</div><!-- end #MobileScreen.mobileScreen -->
+	
+	<div id="ErrorIdMask"></div>
+	<!-- this is the common popup window used for error messages. called with m.popError(msg, type). see main.js for details. -->
+	<div id="ErrorId" class="errorAlert">
+		<div class="infoBox">
+			<div class="icon icon_alert"></div>
+			<div class="errorDisplayMessage"><h3></h3><p></p></div>
+			<input type="submit"  class="btnEnterQty"  name="Close" value="x"  />
+		</div>
+	</div>
+	<!-- this is the common popup window used for error messages. called with m.popError(msg, type). see main.js for details. -->
+	<div id="blankErrorId" class="errorAlert">
+		<div class="infoBox"></div>
+	</div>
+	<!-- this is an in-page error/info message. called with m.popError(msg, type, inpage=true). see main.js for details. -->
+	<div id="onpageErrorId" class="errorAlert">
+		<div class="infoBox">
+			<div class="icon icon_alert"></div>
+			<div class="errorDisplayMessage"><h3></h3><p></p></div>
+			<input type="submit" class="formBtnLeft"  name="formBtnLeft" value="x"  />
+			<input type="submit" class="formBtnRight"  name="formBtnRight" value="x"  />
+		</div>
+	</div>
+	<!-- once this html is loaded kick off a timer -->
+	<script>var pageload = u.setMSecsTimer();</script>
+</body>
+</html>

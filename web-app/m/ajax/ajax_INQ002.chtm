@@ -1,0 +1,35 @@
+{
+	"status":				"success",
+	"page":					"INQ002",
+	"config": {
+		"beepCount":		2,
+		"leftURL":			"ajax/ajax_Home.chtm",
+		"homeURL":			"ajax/ajax_Home.chtm",
+		"toggleURL":		"ajax/ajax_Home.chtm",
+		"showKeyboard":		true,
+		"appLabel":			"ItemInquiry",
+		"line_1":			"&lt;Article Number&gt;",
+		"line_1_right":		"&lt;Sell: $x,xxx.xx&gt;",
+		"line_2":			"&lt;status&gt;",
+		"line_2_right":		"&lt;Reg: $x,xxx.xx&gt;",
+		"line_3":			"&lt;Article Description&gt;",
+		
+		"header":				"On Hand: <#>",
+		"salesFloorLocs":		"Sales Floor Locs: <#>",
+		"salesFloorLocation":	"&lt;Sales Floor Location&gt;",
+		"salesFloorQty":		"&lt;Capacity&gt;",
+		"salesFloorAction":		"ajax/ajax_INQ003.chtm",
+	
+		"backroomLocs":			"Backroom Locs: <#>   Qty: <#>",
+		"backroomLocation":		"&lt;Backroom Location&gt;",
+		"backroomQty":			"&lt;Quantity&gt;",
+		"backroomAction":		"ajax/ajax_INQ004.chtm",
+		
+		"reverseLogistics":				"Reverse Logistics",
+		"reverseLogisticsAction":		"ajax/ajax_INQ005.chtm"
+
+	}
+	
+
+	
+}

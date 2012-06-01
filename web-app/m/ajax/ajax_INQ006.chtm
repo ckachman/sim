@@ -1,0 +1,12 @@
+{
+
+	"status":			"alert",
+	"header":			"Recalled Item",
+	"body":				"Give to Reverse Logistics.",
+	"beepCount":		4,
+	"redirect":			"ajax/ajax_ItemInquiry.chtm",
+	"redirectViaAjax":	true,
+	"redirectOnOK":		true,
+	"redirectAjaxData":	{ "status": "success", "page": "INQ001" }
+	
+}

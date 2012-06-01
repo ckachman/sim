@@ -1,0 +1,22 @@
+{
+	"status":				"success",
+	"page":					"PULL005",
+	"config": {
+		"beepCount":		2,
+		"appLabel":			"Pull",
+		"leftURL":			"ajax/ajax_Home.chtm",
+		"homeURL":			"ajax/ajax_Home.chtm",
+		"toggleURL":		"ajax/ajax_Home.chtm",
+		"showKeyboard":		true,
+		"line_1":			"",
+		"line_2":			"",
+		"line_3":			"",
+		"line_2_right":		"&lt;Pull Type&gt;",
+		"fill_group":		"<b>&lt;##A ###A##&gt;</b><br>If all items have been scanned press next",
+		"fieldLabel":		"<b>Scan</b>/<b>Key</b> item barcode",
+		"fieldID":			"PulltxtItemScan2",
+		"formID":			"formPULL005"
+	}
+
+	
+}
