@@ -8,7 +8,11 @@ class BackstockController {
 		
 		
 		def sku = params.txtItemScan
-		def item = new Item(sku:sku, description:"Men's Awesome Plaid Pants")
+		sku = sku ?: params.id
+		println "sku: $sku"
+		def item = Item.findBySku(sku)
+		
+		//def item = new Item(sku:sku, description:"Men's Awesome Plaid Pants")
 		
 		//TODO - replace this with a real item locations lookup based on item sku
 		def itemLocations = []
