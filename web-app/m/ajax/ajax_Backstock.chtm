@@ -10,7 +10,7 @@
 		"fieldLabel":		"<b>Scan</b>/<b>Key</b> item barcode",
 		"fieldID":			"txtItemScan",
 		"formID":			"formBCK001",
-		"formAction":		"backstock/itemLocation",
+		"formAction":		"m/backstock/itemLocations",
 		"appLabel":			"Backstock",
 		"line_1":			"",
 		"line_2":			"",
