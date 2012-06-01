@@ -34,6 +34,16 @@ class BackstockController {
 		def item = session.item
 		def location = Location.findByLocId(locId)
 		
+		if(!location){
+			println "location $locId does not exist - creating"
+			location = new Location(locId: locId, state: "Back Room")
+			if(location.save()){
+				println "successfull saved new location $locId"
+			}else{
+				println "failed to save new location $locId; $location.errors"
+			}
+		}
+		
 		def itemloc = new ItemLocation(location:location, quantity:0, item:item)
 		
 		println "loc id: $locId"
@@ -64,7 +74,7 @@ class BackstockController {
 			itemLocation = new ItemLocation(location:location, item:item)
 		}
 		
-		itemLocation.quantity += quantity
+		itemLocation.quantity = itemLocation.quantity + quantity
 		
 		
 		// update itemlocation quantity

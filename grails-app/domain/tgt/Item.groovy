@@ -21,4 +21,8 @@ class Item {
 		status nullable:true, inList: STATUSES
 		state blank:false, inList:STATES
     }
+	
+	public String toString(){
+		return description
+	}
 }

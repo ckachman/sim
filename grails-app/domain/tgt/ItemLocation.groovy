@@ -4,7 +4,7 @@ class ItemLocation implements Serializable{
 
 	static belongsTo = [item: Item, location: Location]
 	
-	Integer quantity
+	Integer quantity = 0
 	
     static constraints = {
 		item nullable:false
@@ -15,4 +15,6 @@ class ItemLocation implements Serializable{
 	static mapping = {
 		id composite: ['item', 'location']
 	}
+	
+	
 }

@@ -15,4 +15,8 @@ class Location {
 		locId blank:false //TODO - needs to match a specific pattern
 		state blank:false, inList:STATES		
     }
+	
+	public String toString(){
+		return locId
+	}
 }
