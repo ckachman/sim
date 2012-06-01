@@ -13,10 +13,10 @@
 		"line_2":			"490581002089",
 		"line_3":			"Men's Denim Shorts",
 		"fill_group":		"Mens",
-		"location":			"03A232A32",
+		"location":			"${itemloc?.location?.locId}",
 		"fieldLabel":		"Enter quantity",
 		"fieldID":			"txtItemQty",
-		"formAction":		"ajax/ajax_BCK004.chtm",
+		"formAction":		"../backstock/editItemLocation",
 		"formID":			"formBCK004"
 	}
 		
