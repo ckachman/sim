@@ -30,6 +30,11 @@ class BackstockController {
 	
 	def updateItemLocation = {
 		println "params: $params"
+		
+		def quantity = params.txtItemQty
+		
+		// update itemlocation quantity
+		
 		[]
 
 	}

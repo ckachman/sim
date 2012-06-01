@@ -16,7 +16,7 @@
 		"location":			"${itemloc?.location?.locId}",
 		"fieldLabel":		"Enter quantity",
 		"fieldID":			"txtItemQty",
-		"formAction":		"../backstock/editItemLocation",
+		"formAction":		"../backstock/updateItemLocation",
 		"formID":			"formBCK004"
 	}
 		
