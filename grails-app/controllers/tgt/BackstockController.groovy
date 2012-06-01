@@ -19,5 +19,17 @@ class BackstockController {
 		
 		[itemLocations: itemLocations, item: item]		
 	}
+	
+	// edit item location
+	def editItemLocation = {
+		println "params: $params"
+		[]
+	}
+	
+	def updateItemLocation = {
+		println "params: $params"
+		[]
 
+	}
+	
 }
