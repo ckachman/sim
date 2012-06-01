@@ -1,0 +1,23 @@
+{
+	"status":				"success",
+	"page":					"M001",
+	"config": {
+		"beepCount":		2,
+		"showKeyboard":		true,
+		"appLabel":			"Home",
+		"formAction":		"ajax/ajax_Backstock.chtm"
+	},
+	"homeUrls": {
+		"backstock":		"ajax/ajax_Backstock.chtm",
+		"pull":				"ajax/ajax_Pull.chtm",
+		"iteminquiry":		"ajax/ajax_ItemInquiry.chtm"
+	},
+		
+	"strings": {
+		"page":				"Page",
+		"of":				"of",
+		"close":			"Close",
+		"enter":			"Enter"
+	}
+	
+}

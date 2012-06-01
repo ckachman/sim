@@ -1,0 +1,131 @@
+
+
+
+body { margin: 0 auto; overflow: hidden; font-family: Tahoma; font-size: 12px; color: black; }
+
+form { margin: 0px; padding: 0px; }
+
+a { cursor: pointer; }
+
+
+.pagefrag { display: none; }
+.pagefrag.active { display: block; }
+
+
+
+
+.mobileScreen { width: 240px; overflow: hidden; margin: 0; height: 320px; border: 1px solid black; position: relative; z-index: 1; background-color: white;
+    /*z-index: -100;*/
+}
+
+.btn, .icon { width: 40px; height: 40px; display: block; overflow: hidden; background-image: url(../images/icons.gif); background-repeat: no-repeat; }
+.btn, .app_btn { cursor: pointer; margin-top: 1px; }
+
+.btn_home, .btn_toggle, .btn_keyboard { float: left; }
+.btn_home { background-position: 0 0; margin-left: 7px; }
+.btn_toggle { background-position: 0 -40px; margin-left: 19px; }
+.btn_keyboard { background-position: 0 -80px;margin-right: 5px; float: right; }
+
+.btn_left, .btn_down, .btn_up, .btn_right { float: left; width: 34px; height: 34px; margin-left: 13px; }
+.btn_left { background-position: 0 -120px; margin-left: 7px; }
+.btn_down { background-position: 0 -154px; }
+.btn_up { background-position: 0 -188px; }
+.btn_right { background-position: 0 -222px; }
+
+.app_btn { width: 48px; height: 48px; display: block; overflow: hidden; background-image: url(../images/apps.jpg); background-repeat: no-repeat; float: left; margin: 0px 10px 20px 8px; }
+.btn_exit { background-position: 0 0; }
+.btn_backstock { background-position: 0 -48px; }
+.btn_pricechange { background-position: 0 -96px; }
+.btn_pull { background-position: 0 -144px; }
+.btn_backroomupdate { background-position: 0 -192px; }
+.btn_iteminquiry { background-position: 0 -240px; }
+
+#timeData { position: absolute; bottom: 25px; right: 0px; font-size: 9px; }
+#time { position: absolute; bottom: 0px; right: 0px; font-size: 9px; }
+
+
+
+
+#ErrorIdMask { height: 320px; width: 240px; position: absolute; top: 0px; left: 0px; z-index: 2; display: none; 
+/*
+background-color: black;
+-moz-opacity: 0.5;  
+-o-opacity: 0.5;
+-webkit-opacity: 0.5;
+opacity: 0.5; 
+-ms-filter:"filter: alpha(opacity=50)"; 
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";*/
+}
+#ErrorId, #blankErrorId { width: 220px; height: 200px; background-color: white; border: 1px solid black; margin: 0 auto; position: absolute; top: 50px; left: 10px; overflow: visible; z-index: 3; }
+#blankErrorId { width: 240px; height: 320px; background-color: white; border: 1px solid black; margin: 0 auto; position: absolute; top: 0px; left: 0px; overflow: visible; z-index: 3; }
+.errorAlert { display: none; }
+.icon { float: left; margin-left: 10px; margin-top: 10px; }
+.icon_info { background-position: 0 -394px; }
+.icon_alert { background-position: 0 -354px; }
+.icon_error { background-position: 0 -312px; width: 42px; height: 42px; }
+#errorDisplayMessage { width: 155px; left: 65px; top: 10px; position: absolute; color: black; }
+
+#ErrorId.errorAlert_error, #ErrorId.errorAlert_alert { border: none; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
+#ErrorId.errorAlert_error { background-color: #c00; color: white; font-weight: bold; }
+#ErrorId.errorAlert_alert { background-color: #ff0; color: black; }
+
+/*#header_line_1 { position: absolute; top: 0px; left: 0px; }*/
+
+
+.absGlobalNav { width: 240px; height: 42px; margin: 0px; background-color: #ccc; margin: 0px; position: absolute; top: 0px; overflow: hidden; }
+
+.appNav { background-color: #ccc; margin: 0px; position: absolute; top: 258px; height: 36px;width: 240px; overflow: hidden; }
+
+.ScreenID { font-size: 10pt; text-align: right; position: absolute; bottom: 10px; right: 7px; }
+
+.absContentArea2 { background-color: #fff; margin: 0px; position: absolute; overflow: hidden; top: 42px; width: 240px; height: 216px; }
+
+
+
+#content_head { margin:0; padding:0; width:100%; /*height: 51px;*/ }
+
+.appLabel { margin-right: 5px; text-align: right; font-size: 16px; }
+
+
+.mainPageHeader { position: relative; height: 156px; padding-top: 8px; }
+#FooterBar { position: absolute; }
+
+.loc, .tableTitle { font-size: 16px; display: block; }
+
+.TextBox { width: 220px; text-align: left; margin-top: 1px; }
+.th3 { font-size: 10pt; width: 220px; height: 16px; overflow: hidden; }
+
+.th3, .loc, .TextBox, .fill_group { margin-left: 3px; }
+.th3#header_line_2_right { text-align: right; width: 235px; right: 5px; position: absolute; top: 20px; }
+.th3#header_line_1_right { text-align: right; width: 235px; right: 5px; position: absolute; top: 0px; }
+
+.qty { background-color: #ccc; padding: 5px; width: 140px; margin: 0px auto; overflow: hidden; margin-top: 20px; }
+.qty label { display: block; padding-bottom: 5px; font-size: 13px; }
+.btn_increase, .btn_decrease { width: 28px; height: 28px; float: left; margin-left: 3px; }
+.btn_increase { background-position: 0 -256px; float: right; margin-right: 2px; }
+.btn_decrease { background-position: 0 -284px; }
+
+
+.EnterQtyTextBox { width: 40px; margin: 0px auto; margin-top: 4px; margin-left: 13px; }
+.btnEnterQty, .btnNext, .btnExit, .formBtnRight, .formBtnleft { width: 70px; height: 25px; text-align: center; background-color: #ccc; position: absolute; bottom: 6px; right: 10px; }
+.btnExit, .formBtnleft { right: auto; left: 10px; }
+
+.fill_group { font-size: 13px; padding-top: 0px; margin-top: 0px; margin-bottom: 3px; }
+
+
+.GridView th { background-color:#cccccc; font-size:13px; }
+.GridView { font-size:13px; border-width: 0px; border-style: none; border-color: #DEDEDE; width: 100%; border-collapse: collapse; text-align: justify; }
+.gridFooter { font-size: 10px; margin: 0; padding: 2px 3px 4px 0px; border: 0; text-align: right; width: 97%; height: 10px; }
+
+.listTable .GridView td, .listTable .GridView th { border-bottom: 1px solid #000000; }
+.listTable .GridView td { font-size: 15px; line-height: 22px; }
+
+#M001 { margin-top: 35px; margin-left: 15px; }
+
+#ItemInquiry .buttonWide, #itemInquiry #salesFloorLocsData { width: 220px; margin-left: 10px; margin-right: 10px; }
+#INQ002 .value { float: right; }
+#salesFloorLocsData, #backroomLocsData { overflow: hidden; padding-bottom: 10px; width: 220px; margin-left: 10px; }
+#ItemInquiry .contentHeader { font-size: 14px; font-weight: bold; margin-left: 3px; }
+#ItemInquiry .buttonRight { float: right; margin-right: 10px; }
+.tableHeader { background-color: #ccc; width: 100%; font-size: 14px; font-weight: bold; text-align: center; padding: 3px; }
+.tableHeader, #INQ003 .locationGrid, #INQ004 .locationGrid { margin-top: -8px; }

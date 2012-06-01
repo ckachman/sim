@@ -1,0 +1,29 @@
+{
+	"status":				"success",
+	"page":					"PULL003",
+	"config": {
+		"beepCount":		2,
+		"leftURL":			"ajax/ajax_Home.chtm",
+		"homeURL":			"ajax/ajax_Home.chtm",
+		"toggleURL":		"ajax/ajax_Home.chtm",
+		"showKeyboard":		true,
+		"appLabel":			"Pull",
+		"line_1":			"",
+		"line_2":			"",
+		"line_2_right":		"&lt;Pull Type&gt;"
+	},
+	
+	"gridTable":	{
+		"tableTitle":		"<b>Select pull list</b>",
+		"data": [
+			{"Type":"<a rel='replenishment'>&lt;Pull list name&gt;</a>", "Lists":"<###>"},
+			{"Type":"<a rel='sales_floor_request'>&lt;Pull list name&gt;</a>", "Lists":"<###>"},
+			{"Type":"<a rel='reverse_logistics'>&lt;Pull list name&gt;</a>", "Lists":"<###>"},
+			{"Type":"<a rel='price_change'>&lt;Pull list name&gt;</a>", "Lists":"<###>"},
+			{"Type":"<a rel='discontinued'>&lt;Pull list name&gt;</a>", "Lists":"<###>"},
+			{"Type":"<a rel='pull_item'>&lt;Pull list name&gt;</a>", "Lists":"<###>"}
+		]
+	}
+
+	
+}

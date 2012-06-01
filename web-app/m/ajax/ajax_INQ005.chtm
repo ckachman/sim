@@ -1,0 +1,23 @@
+{
+	"status":				"success",
+	"page":					"INQ005",
+	"config": {
+		"beepCount":		2,
+		"leftURL":			"ajax/ajax_Home.chtm",
+		"homeURL":			"ajax/ajax_Home.chtm",
+		"toggleURL":		"ajax/ajax_Home.chtm",
+		"showKeyboard":		true,
+		"appLabel":			"ItemInquiry",
+		"line_1":			"&lt;Article Number&gt;",
+		"line_1_right":		"&lt;Sell: $x,xxx.xx&gt;",
+		"line_2":			"&lt;status&gt;",
+		"line_2_right":		"&lt;Reg: $x,xxx.xx&gt;",
+		"line_3":			"&lt;Article Description&gt;",
+		
+		"tableHeader":		"Reverse Logistics",
+		"tableContent":		"<b>Primary Disposition:</b><br /> &lt;Damage Disposition&gt;<br /><br /> <b>Secondary Disposition:</b><br /> &lt;Damage Disposition&gt;<br /><br /> <b>End of Life Date:</b> &lt;YYYY/MM/DD&gt;<br /> <b>Recall:</b> &lt;Recall type&gt;<br />"
+		
+	}	
+
+	
+}

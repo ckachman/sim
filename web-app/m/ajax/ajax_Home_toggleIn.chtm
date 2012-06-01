@@ -1,0 +1,26 @@
+{
+	"status":				"success",
+	
+		
+	"strings": {
+		"appName":			"Home",
+		"page":				"Page",
+		"of":				"of",
+		"close":			"Close",
+		"enter":			"Enter"
+	},
+	
+	"curPage": [ "M001" ],
+	
+	"pageDataLoad": [
+		{
+			"config": {
+				"appLabel":			"Home",
+				"showKeyboard":		true
+			}
+		}
+	]	
+	
+	
+	
+}

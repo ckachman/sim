@@ -1,0 +1,38 @@
+{
+	"status":				"success",
+	"page":					"BCK001",
+	
+	"strings": {
+		"appName":			"Backstock",
+		"page":				"Page",
+		"of":				"of",
+		"close":			"Close",
+		"enter":			"Enter"
+	},
+	
+	"curPage": [ "BCK001" ],
+	
+	"pageDataLoad": [
+		{ 
+				
+			"config": {
+				"beepCount":		2,
+				"appLabel":			"Backstock",
+				"showKeyboard":		true,
+				"leftURL":			"ajax/ajax_Home.chtm",
+				"homeURL":			"ajax/ajax_Home.chtm",
+				"toggleURL":		"ajax/ajax_Home.chtm",
+				"fieldLabel":		"<b>Scan</b>/<b>Key</b> item barcode",
+				"fieldID":			"txtItemScan",
+				"line_1":			"",
+				"line_2":			"",
+				"line_3":			""
+			}
+		
+		}
+	]	
+	
+	
+	
+	
+}

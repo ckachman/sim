@@ -1,0 +1,43 @@
+{
+	"status":				"success",
+	"page":					"PULL002",
+	"strings": {
+		"appName":			"Pull",
+		"page":				"Page",
+		"of":				"of",
+		"close":			"Close",
+		"enter":			"Enter"
+	},
+	
+	"curPage": [ "PULL002" ],
+	
+	"pageDataLoad": [
+		{ 
+			
+			"config": {
+				"beepCount":		2,
+				"showKeyboard":		true,
+				"leftURL":			"ajax/ajax_Home.chtm",
+				"homeURL":			"ajax/ajax_Home.chtm",
+				"toggleURL":		"ajax/ajax_Home.chtm"
+			},
+			
+			"gridTable":	{
+				"tableTitle":		"<b>Select pull type</b>",
+				"header": [ "Type", "Lists"],
+				"data": [
+					[ "<a rel='replenishment'>Replenishment</a>", "<###>" ],
+					[ "Sales Floor Request", "<###>" ],
+					[ "Reverse Logistics", "<###>" ],
+					[ "Price Change", "<###>" ],
+					[ "Discontinued", "<###>" ],
+					[ "Pull Item", "<###>" ]
+				]
+			}
+			
+			
+		}
+	]	
+
+	
+}

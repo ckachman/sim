@@ -1,0 +1,30 @@
+{
+	"status":				"success",
+	"page":					"INQ004",
+	"config": {
+		"beepCount":		2,
+		"leftURL":			"ajax/ajax_Home.chtm",
+		"homeURL":			"ajax/ajax_Home.chtm",
+		"toggleURL":		"ajax/ajax_Home.chtm",
+		"showKeyboard":		true,
+		"appLabel":			"ItemInquiry",
+		"line_1":			"&lt;Article Number&gt;",
+		"line_1_right":		"&lt;Sell: $x,xxx.xx&gt;",
+		"line_2":			"&lt;status&gt;",
+		"line_2_right":		"&lt;Reg: $x,xxx.xx&gt;",
+		"line_3":			"&lt;Article Description&gt;"
+		
+	},
+	
+	"gridTable": {
+		"tableTitle":		"",
+		"data":	[
+			{"Backroom":"<b>&lt;##A ###A ##&gt;</b>","Group":"&lt;Group&gt;","Qty":"<b>###</b>"},
+			{"Backroom":"<b>&lt;##A ###A ##&gt;</b>","Group":"&lt;Group&gt;","Qty":"<b>###</b>"},
+			{"Backroom":"<b>&lt;##A ###A ##&gt;</b>","Group":"&lt;Group&gt;","Qty":"<b>###</b>"},
+			{"Backroom":"<b>&lt;##A ###A ##&gt;</b>","Group":"&lt;Group&gt;","Qty":"<b>###</b>"}
+		]
+	}	
+
+	
+}
